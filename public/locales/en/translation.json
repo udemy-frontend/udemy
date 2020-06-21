@@ -1,0 +1,20 @@
+{
+    "login": {
+        "1": "Log In"
+    },
+    "signup": {
+        "1": "Sign Up"
+    },
+    "or_password": {
+        "1": "or",
+        "2": "Forgot Password"
+    },
+    "dont_account": {
+        "1": "Don't have an account?",
+        "2": "Sign up"
+    },
+    "already_account": {
+        "1": "Already have an account?",
+        "2": "Log In"
+    }
+}

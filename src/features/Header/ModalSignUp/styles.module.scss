@@ -1,0 +1,32 @@
+.inputModal_Login{
+    :global{
+        .ant-row{
+            justify-content: center !important;
+        }
+        .ant-input-affix-wrapper{
+            font-size: 20px;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 120px;
+            margin: 16px 24px 16px 0;
+            }
+    }
+    .setPaddingFormItem_modalLogin{
+        :global{
+            .ant-col-offset-8{
+                margin-left: unset;
+                text-align: center;
+            }
+        }
+        .btnlogin{
+            width: 100%;
+        }
+      
+    }
+
+}
+
