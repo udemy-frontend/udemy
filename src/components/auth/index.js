@@ -21,15 +21,18 @@ export const signout = (next) => {
 };
 
 export const isAuthenticated = () => {
+
+  if (typeof window !== "undefined") {
+    return false;
+  }
+  
   if (localStorage.getItem("jwt")) {
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
     var user = { _id: "1", name: "", email: "", role: "" };
   }
 
-  if (typeof window !== "undefined") {
-    return false;
-  }
+  
 };
 
 export const jwt = () => {

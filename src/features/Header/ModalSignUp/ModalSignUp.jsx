@@ -5,6 +5,10 @@ import { API } from "../../../config";
 import udemylogo from "../../../assets/images/logo-coral.svg";
 import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
+<<<<<<< HEAD
+=======
+import { Link } from "react-router-dom";
+>>>>>>> f0198d3cefea50c8b23d56cec43b025fa5f123e9
 
 // import { connect } from "react-redux";
 // import { bindActionCreators } from "redux";
@@ -19,7 +23,11 @@ const tailLayout = {
 };
 
 const ModalSignUp = (props) => {
+<<<<<<< HEAD
   const { modalSignUpVisible, onCancelModalSignUp, modalLoginVisible } = props;
+=======
+  const { modalSignUpVisible, onCancelModalSignUp } = props;
+>>>>>>> f0198d3cefea50c8b23d56cec43b025fa5f123e9
   const [loading, setLoading] = useState(false);
 
   const onSubmit = (values) => {
@@ -35,7 +43,10 @@ const ModalSignUp = (props) => {
       .then((res) => {
         if (res.status === 200) {
           setLoading(true);
+<<<<<<< HEAD
          
+=======
+>>>>>>> f0198d3cefea50c8b23d56cec43b025fa5f123e9
           const success = "Tạo tài khoản thành công !";
           openNotification("success", success);
           setTimeout(() => {
@@ -146,6 +157,7 @@ const ModalSignUp = (props) => {
         >
           <Typography>
             {t("already_account.1")}
+<<<<<<< HEAD
             <Button
               className={styles.setpaddingBtnAlready_account}
               onClick={() => onCancelModalSignUp(modalLoginVisible())}
@@ -158,6 +170,12 @@ const ModalSignUp = (props) => {
           </Typography>
         </Form.Item>
       
+=======
+            <Link to="/google"> {t("already_account.2")} </Link>
+            {t("already_account.3")}
+          </Typography>
+        </Form.Item>
+>>>>>>> f0198d3cefea50c8b23d56cec43b025fa5f123e9
       </Form>
     </Modal>
   );

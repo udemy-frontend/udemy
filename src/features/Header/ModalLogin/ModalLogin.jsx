@@ -36,7 +36,6 @@ const ModalLogin = (props) => {
       .then((res) => {
         if (res.status === 200) {
           setLoading(true);
-
           const success = "Đăng nhập thành công !";
           openNotification("success", success);
           setTimeout(() => {
@@ -55,7 +54,6 @@ const ModalLogin = (props) => {
       .catch((err) => {
         console.log("err", err);
       });
-
     onCancelModalLogIn();
   };
 
