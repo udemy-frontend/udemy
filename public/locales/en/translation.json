@@ -11,7 +11,6 @@
     },
     "dont_account": {
         "1": "Don't have an account?",
-<<<<<<< HEAD
         "2": "Sign up",
         "3": "here!"
     },
@@ -19,12 +18,5 @@
         "1": "Already have an account?",
         "2": "Log In",
         "3": "here!"
-=======
-        "2": "Sign up"
-    },
-    "already_account": {
-        "1": "Already have an account?",
-        "2": "Log In"
->>>>>>> f0198d3cefea50c8b23d56cec43b025fa5f123e9
     }
 }
