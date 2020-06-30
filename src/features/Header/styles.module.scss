@@ -1,0 +1,63 @@
+.layout {
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=vietnamese");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #29303b;
+  line-height: 1.43;
+  font-family: "Open Sans", sans-serif;
+
+  .header {
+    background: #ffffffc0;
+    .menuUdemy {
+      display: flex;
+      justify-content: space-between;
+      :global {
+        .ant-menu-submenu:hover {
+          color: none !important;
+          border-bottom: 2px solid transparent;
+        }
+        .ant-menu-item-active:hover {
+          color: none !important;
+          border-bottom: 2px solid transparent;
+        }
+        .ant-menu-item-selected {
+          color: none !important;
+          border-bottom: 2px solid transparent;
+        }
+      }
+    }
+  }
+  .setColorBtnChangeLanguage {
+    :global {
+      .ant-btn-link {
+        color: unset !important;
+      }
+    }
+  }
+  .setWidthSearch {
+    width: 500px;
+  }
+  .logo {
+    border-bottom: 2px solid transparent;
+    img {
+      width: 120px;
+      margin: 16px 24px 16px 0;
+      float: left;
+    }
+  }
+
+  // .header_Row {
+  //   width: 100%;
+  // }
+  // .inputSearch {
+  //   margin-top: 17px;
+  // }
+
+  // .btnLogInSignUp {
+  //   margin-top: 17px;
+  //   display: flex;
+  //   justify-content: space-around;
+  // }
+}

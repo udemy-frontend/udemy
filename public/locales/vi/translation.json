@@ -1,0 +1,21 @@
+{
+  "login": {
+    "1": "Đăng nhập"
+  },
+  "signup": {
+    "1": "Đăng ký"
+  },
+  "or_password": {
+    "1": "Nếu bạn ",
+    "2": "quên mật khẩu"
+  },
+  "dont_account": {
+    "1": "Đăng ký thành viên",
+    "2": "ở đây"
+  },
+  "already_account": {
+    "1": "Nếu bạn đã đăng ký hãy",
+    "2": "Đăng Nhập",
+    "3": " ở đây!"
+  }
+}
