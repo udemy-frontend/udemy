@@ -6,20 +6,20 @@ import { PageHeader, Tabs, Button, Descriptions } from "antd";
 const { TabPane } = Tabs;
 
 const {
-  user: { _id, name, email, role },
+  user
 } = isAuthenticated();
 
 const renderContent = (column = 2) => (
   <Descriptions size="small" column={column}>
 
-    <Descriptions.Item label="Name">{name}</Descriptions.Item>
+    <Descriptions.Item label="Name">{user && user.name  ? user.name : ''}</Descriptions.Item>
     <Descriptions.Item label="Id">
-      <a>{_id || ''}</a>
+      <a>{user && user._id  ? user._id : ''}</a>
     </Descriptions.Item>
-    <Descriptions.Item label="Email">{email}</Descriptions.Item>
+    <Descriptions.Item label="Email">{user && user.email  ? user.email : ''}</Descriptions.Item>
     <Descriptions.Item label="CreatAt Time">2017-01-10</Descriptions.Item>
     <Descriptions.Item label="Type">
-      {role === 1 ? "Admin" : "Registered User"}
+      {user && user.role === 1 ? "Admin" : "Registered User"}
     </Descriptions.Item>
     <Descriptions.Item label="Purchase Time">...</Descriptions.Item>
   </Descriptions>
